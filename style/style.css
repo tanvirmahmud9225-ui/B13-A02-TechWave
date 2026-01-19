@@ -214,6 +214,7 @@ nav {
     font-size: 3rem;
     color: var(--second-text-color);
     margin-bottom: 16px;
+    font-weight: 900;
 }
 
 
@@ -243,41 +244,37 @@ nav {
 .techwave-box {
     display: grid;
     gap: 30px;
-    /* grid-template-areas: 
+    grid-template-areas:
         "tech-card-1    tech-card-2     tech-card-2     tech-card-2    tech-card-2"
         "tech-card-1    tech-card-3     tech-card-3     tech-card-3     tech-card-3"
-        "tech-card-4    tech-card-4     tech-card-4     tech-card-4     tech-card-5   "; */
-    grid-template-columns: repeat(6, 1fr);
+        "tech-card-4    tech-card-4     tech-card-4     tech-card-4     tech-card-5   ";
+
 }
 
 .tech-card-1 {
-    /* grid-area: tech-card-1; */
-    grid-column: span 2;
-    grid-row: span 2;
+    grid-area: tech-card-1;
+
     padding: 107px 40px;
 }
 
 .tech-card-2 {
-    /* grid-area: tech-card-2; */
-    grid-column: span 4;
+    grid-area: tech-card-2;
+
     padding: 40px;
 }
 
 .tech-card-3 {
-    /* grid-area: tech-card-3; */
-    grid-column: span 4;
+    grid-area: tech-card-3;
     padding: 40px;
 }
 
 .tech-card-4 {
-    /* grid-area: tech-card-4; */
-    grid-column: span 4;
+    grid-area: tech-card-4;
 
 }
 
 .tech-card-5 {
-    /* grid-area: tech-card-5; */
-    grid-column: span 2;
+    grid-area: tech-card-5;
     padding: 40px;
 }
 
@@ -299,11 +296,41 @@ nav {
     font-weight: 150;
 }
 
+/* footer-section-styles */
+footer {
+    background-color: blue;
+    background: url('../assets/footer-bg.png;')
 
+}
 
+.footer-container {
+    background: url('../assets/footer-bg.png');
+    background-position: 50% 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
 
+#footer-logo {
+    font-size: 5rem;
+}
 
-
+.social-links {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;   
+}
+.social-link-div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
 
 @media screen and (max-width:576px) {
@@ -348,12 +375,22 @@ nav {
         margin-bottom: 1rem;
     }
 
+    #about-section {
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+
     #about-rating {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         justify-content: center;
         align-items: center;
+    }
+
+    .about-rating-heading {
+        font-weight: 900;
+        font-size: 3rem;
     }
 
     .about-devider {
@@ -373,36 +410,34 @@ nav {
         display: none;
     }
 
-    #techwave-box {
+    .techwave-container {
+        padding: 40px 0px;
+    }
+
+    #techwave {
+        padding-bottom: 0px;
+    }
+
+    .techwave-heading {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+        text-transform: capitalize;
+        padding-bottom: 16px;
+    }
+
+    .techwave-box {
+        gap: 16px;
+        grid-template-columns: 1fr;
         grid-template-areas:
             "tech-card-1"
             "tech-card-2"
             "tech-card-3"
             "tech-card-4"
-            "tech-card-5";
+            "tech-card-5"
+        ;
+
     }
 
-    .tech-card-1 {
-        grid-area: tech-card-1;
-        padding: 107px 40px;
-    }
 
-    .tech-card-2 {
-        grid-area: tech-card-2;
-        padding: 40px;
-    }
 
-    .tech-card-3 {
-        grid-area: tech-card-3;
-        padding: 40px;
-    }
-
-    .tech-card-4 {
-        grid-area: tech-card-4;
-    }
-
-    .tech-card-5 {
-        grid-area: tech-card-5;
-        padding: 40px;
-    }
 }
