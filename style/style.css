@@ -6,6 +6,7 @@
     color: white;
 }
 
+
 :root {
     --1st-bg-color: rgba(26, 11, 46, 1);
     --2nd-bg-color: rgba(35, 14, 61, 1);
@@ -132,7 +133,7 @@ nav {
 
 .banner-description {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 200;
     margin-bottom: 15px;
 }
 
@@ -140,7 +141,8 @@ nav {
     text-decoration: none;
     display: inline-block;
 }
-.banner-btn i{
+
+.banner-btn i {
     margin-right: 5px;
 }
 
@@ -149,13 +151,76 @@ nav {
     align-items: center;
     gap: 15px;
 }
-#banner-btn-2{
+
+#banner-btn-2 {
     background: none;
     border: 1px solid var(--second-text-color);
     color: var(--second-text-color);
 }
-.fa-envelope{
+
+.fa-envelope {
     color: var(--second-text-color);
+}
+
+
+
+/* About section-style */
+#about-rating {
+    margin-bottom: 200px;
+}
+
+#about-section {
+    background-color: var(--1st-bg-color);
+    padding-bottom: 10px;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.about-content-2nd {
+    font-weight: 200;
+    margin-bottom: 1.45rem;
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+}
+
+.about-content-last {
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.about-devider {
+    margin: 80px 0px;
+    border: 1px solid rgb(50, 21, 76);
+}
+
+#about-rating {
+    justify-content: space-between;
+}
+
+.about-rating-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--second-text-color);
+    margin-bottom: 16px;
+}
+
+.about-content-2nd {
+    padding-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.about-rating-dis {
+    font-weight: 200;
+    text-align: center;
 }
 
 
@@ -177,9 +242,11 @@ nav {
         padding-top: 0;
         padding-bottom: 40px;
     }
-    .banner-content{
+
+    .banner-content {
         text-align: center;
     }
+
     .banner-top {
         margin-bottom: 24px;
     }
@@ -194,7 +261,33 @@ nav {
         margin-top: 40px;
     }
 
+    .about-heading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #about-rating {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-devider {
+        margin: 40px 0px;
+        border: 1px solid rgb(50, 21, 76);
+    }
+
+    .about-content-2nd {
+        margin-bottom: 0;
+    }
+
     .hamburger-menue {
         display: inline;
+    }
+
+    .desktop-br {
+        display: none;
     }
 }
