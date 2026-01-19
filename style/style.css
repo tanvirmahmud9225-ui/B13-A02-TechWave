@@ -140,13 +140,23 @@ nav {
     text-decoration: none;
     display: inline-block;
 }
+.banner-btn i{
+    margin-right: 5px;
+}
 
 .banner-btn {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
+#banner-btn-2{
+    background: none;
+    border: 1px solid var(--second-text-color);
+    color: var(--second-text-color);
+}
+.fa-envelope{
+    color: var(--second-text-color);
+}
 
 
 @media screen and (max-width:576px) {
@@ -161,10 +171,11 @@ nav {
 
     #banner-section {
         background-image: url(../assets/hero-bg.png);
-        background-position: 50% 22%;
+        background-position: 50% 24%;
         background-size: contain;
         background-repeat: no-repeat;
         padding-top: 0;
+        padding-bottom: 40px;
     }
     .banner-content{
         text-align: center;
