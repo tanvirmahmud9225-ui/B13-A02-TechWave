@@ -80,9 +80,48 @@ nav {
     align-items: center;
 }
 
+
+#banner-section{
+    background-image: url(../assets/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.banner-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+.microphone{
+    position: absolute;
+}
+
+.banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner-heading{
+    font-size: 2.8rem;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
 .banner-btn a {
     text-decoration: none;
     display: inline-block;
 }
 
-.banner-btn {}
+.banner-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
