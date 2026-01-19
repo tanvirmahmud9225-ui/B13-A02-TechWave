@@ -15,7 +15,9 @@
     --second-text-color: rgba(0, 255, 136, 1);
 }
 
-
+body {
+    height: 6000px;
+}
 
 .container {
     width: 75%;
@@ -165,20 +167,20 @@ nav {
 
 
 /* About section-style */
-#about-rating {
-    margin-bottom: 200px;
-}
+
 
 #about-section {
     background-color: var(--1st-bg-color);
-    padding-bottom: 10px;
+    padding-bottom: 110px;
+    padding-top: 100px;
 }
 
 .about-content {
     text-align: center;
 }
 
-.about-heading {
+.about-heading,
+.techwave-heading {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-transform: capitalize;
@@ -187,8 +189,10 @@ nav {
 .about-content-2nd {
     font-weight: 200;
     margin-bottom: 1.45rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.7rem;
+    padding-bottom: 30px;
+    font-size: 1rem;
 }
 
 .about-content-last {
@@ -212,16 +216,94 @@ nav {
     margin-bottom: 16px;
 }
 
-.about-content-2nd {
-    padding-bottom: 30px;
-    font-size: 1rem;
-    line-height: 1.25rem;
-}
+
 
 .about-rating-dis {
     font-weight: 200;
     text-align: center;
 }
+
+
+
+/* techwave-section */
+#techwave {
+    background-color: var(--2nd-bg-color);
+    padding-bottom: 120px;
+}
+
+.techwave-container {
+    padding-top: 120px;
+}
+
+.techwave-heading {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.techwave-box {
+    display: grid;
+    gap: 30px;
+    /* grid-template-areas: 
+        "tech-card-1    tech-card-2     tech-card-2     tech-card-2    tech-card-2"
+        "tech-card-1    tech-card-3     tech-card-3     tech-card-3     tech-card-3"
+        "tech-card-4    tech-card-4     tech-card-4     tech-card-4     tech-card-5   "; */
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.tech-card-1 {
+    /* grid-area: tech-card-1; */
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 107px 40px;
+}
+
+.tech-card-2 {
+    /* grid-area: tech-card-2; */
+    grid-column: span 4;
+    padding: 40px;
+}
+
+.tech-card-3 {
+    /* grid-area: tech-card-3; */
+    grid-column: span 4;
+    padding: 40px;
+}
+
+.tech-card-4 {
+    /* grid-area: tech-card-4; */
+    grid-column: span 4;
+
+}
+
+.tech-card-5 {
+    /* grid-area: tech-card-5; */
+    grid-column: span 2;
+    padding: 40px;
+}
+
+.tech-card {
+    background-color: var(--3rd-bg-color);
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.tech-card-heading {
+    font-size: 1.5rem;
+}
+
+.tech-card-dis {
+    font-weight: 150;
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width:576px) {
@@ -289,5 +371,38 @@ nav {
 
     .desktop-br {
         display: none;
+    }
+
+    #techwave-box {
+        grid-template-areas:
+            "tech-card-1"
+            "tech-card-2"
+            "tech-card-3"
+            "tech-card-4"
+            "tech-card-5";
+    }
+
+    .tech-card-1 {
+        grid-area: tech-card-1;
+        padding: 107px 40px;
+    }
+
+    .tech-card-2 {
+        grid-area: tech-card-2;
+        padding: 40px;
+    }
+
+    .tech-card-3 {
+        grid-area: tech-card-3;
+        padding: 40px;
+    }
+
+    .tech-card-4 {
+        grid-area: tech-card-4;
+    }
+
+    .tech-card-5 {
+        grid-area: tech-card-5;
+        padding: 40px;
     }
 }
