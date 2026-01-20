@@ -15,10 +15,6 @@
     --second-text-color: rgba(0, 255, 136, 1);
 }
 
-body {
-    height: 6000px;
-}
-
 .container {
     width: 75%;
     max-width: 1200px;
@@ -245,9 +241,9 @@ nav {
     display: grid;
     gap: 30px;
     grid-template-areas:
-        "tech-card-1    tech-card-2     tech-card-2     tech-card-2    tech-card-2"
-        "tech-card-1    tech-card-3     tech-card-3     tech-card-3     tech-card-3"
-        "tech-card-4    tech-card-4     tech-card-4     tech-card-4     tech-card-5   ";
+        "tech-card-1    tech-card-2 tech-card-2     tech-card-2     tech-card-2    tech-card-2"
+        "tech-card-1    tech-card-3 tech-card-3     tech-card-3     tech-card-3     tech-card-3"
+        "tech-card-4    tech-card-4 tech-card-4     tech-card-4     tech-card-4     tech-card-5   ";
 
 }
 
@@ -339,7 +335,7 @@ footer {
 /* Host-Section-Style */
 #host {
     background-color: rgba(26, 11, 46, 1);
-    padding: 40px 0px;
+    padding-bottom: 120px;
 }
 
 .host-container {
@@ -380,7 +376,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 20px;
-    justify-content: center;
 }
 
 .host-link-circle {
@@ -399,6 +394,59 @@ footer {
 
 
 
+
+
+/* Feature - Section - Styles */
+#features {
+    background-color: rgba(26, 11, 46, 1);
+    padding: 120px 0px;
+}
+
+.feature-container {}
+
+.feature-heading {
+    text-align: center;
+}
+
+.feature-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    max-width: 480px;
+    width: 100%;
+    max-height: 540px;
+    height: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.feature-box {
+    gap: 24px;
+}
+
+.feature-card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature-card-heading {
+    font-size: 24px;
+}
+
+.feature-dis {
+    line-height: 24px;
+    font-weight: 200;
+}
+
+.feature-timing {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+
+
+
 @media screen and (max-width:576px) {
     .container {
         width: 95%;
@@ -408,10 +456,12 @@ footer {
     .nav-btn {
         display: none;
     }
-    nav{
+
+    nav {
         align-items: center;
     }
-    .hamburger-menue img{
+
+    .hamburger-menue img {
         width: 25px;
         margin-top: 15px;
     }
@@ -529,6 +579,10 @@ footer {
         font-weight: 200;
     }
 
+    #host {
+        padding-bottom: 40px;
+    }
+
     #footer-logo {
         font-size: 3.8rem;
     }
@@ -543,5 +597,32 @@ footer {
     .host-heading {
         font-size: 2.5rem;
         margin-bottom: 24px;
+    }
+
+    .host-links {
+        justify-content: center;
+    }
+
+    #features {
+        padding: 40px 0px;
+    }
+
+    .feature-box {
+        gap: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        max-width: 480px;
+        width: 100%;
+        max-width: 440px;
+        height: 100%;
+    }
+
+    .feature-img iframe {
+        max-width: 480px;
+        width: 100%;
+        max-height: 300px;
     }
 }
