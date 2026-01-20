@@ -32,9 +32,9 @@
     transition: all 0.3s linear;
 }
 
-.btn:hover{
+.btn:hover {
     transform: skewY(-2deg);
-    background-image: linear-gradient(47deg,  rgb(195, 38, 148), rgba(145, 0, 248, 1) , rgb(160, 149, 31));
+    background-image: linear-gradient(47deg, rgb(195, 38, 148), rgba(145, 0, 248, 1), rgb(160, 149, 31));
 }
 
 
@@ -107,8 +107,9 @@ nav {
     background-color: var(--1st-bg-color);
     padding: 80px 0px;
 }
-.banner-top-container{
-  margin-bottom: 40px;
+
+.banner-top-container {
+    margin-bottom: 40px;
 
 }
 
@@ -121,7 +122,8 @@ nav {
     position: relative;
     margin: 0 auto;
 }
-.banner-badge-btn{
+
+.banner-badge-btn {
     padding: 8px 16px;
     background-color: var(--second-text-color);
     color: black;
@@ -262,7 +264,7 @@ nav {
 }
 
 .techwave-box {
-    
+
     display: grid;
     gap: 30px;
     grid-template-areas:
@@ -310,6 +312,7 @@ nav {
     cursor: pointer;
     transition: all 0.3s linear;
 }
+
 .tech-card:hover {
     transform: scale(1.03);
 }
@@ -450,8 +453,9 @@ footer {
     overflow: hidden;
     transition: all 0.3s linear;
 }
-.feature-card:hover{
-    box-shadow: 0px 5px 10px rgb(46, 171, 134);
+
+.feature-card:hover {
+    box-shadow: 0px 3px 5px rgb(46, 171, 134);
 }
 
 .feature-box {
@@ -518,10 +522,11 @@ footer {
     .banner-badge {
         margin-bottom: 24px;
     }
-    .banner-badge-btn{
-    top: 40px;
-    right: 50px;
-}
+
+    .banner-badge-btn {
+        top: 40px;
+        right: 50px;
+    }
 
     .hero-circle {
         max-width: 230px;
@@ -609,7 +614,6 @@ footer {
 
     .footer-container {
         gap: 16px;
-
     }
 
     .social-links {
