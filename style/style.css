@@ -298,17 +298,15 @@ nav {
 
 /* footer-section-styles */
 footer {
-    background-color: blue;
-    background: url('../assets/footer-bg.png;')
-
+    background: url('../assets/footer-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 120px;
 }
 
 .footer-container {
-    background: url('../assets/footer-bg.png');
-    background-position: 50% 20%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 120px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -317,6 +315,7 @@ footer {
     gap: 32px;
 }
 
+
 #footer-logo {
     font-size: 5rem;
 }
@@ -324,13 +323,80 @@ footer {
 .social-links {
     justify-content: center;
     align-items: center;
-    gap: 40px;   
+    gap: 60px;
 }
-.social-link-div{
+
+.social-link-div {
     display: flex;
     align-items: center;
     gap: 5px;
 }
+
+.copyright-text {
+    font-weight: 200;
+}
+
+/* Host-Section-Style */
+#host {
+    background-color: rgba(26, 11, 46, 1);
+    padding: 40px 0px;
+}
+
+.host-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.host-heading {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.host-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    border-radius: 40px;
+    align-items: center;
+    gap: 40px;
+}
+
+.host-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.host-content-heading {
+    font-size: 2rem;
+}
+
+.host-des {
+    line-height: 24px;
+    font-weight: 200;
+}
+
+.host-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.host-link-circle {
+    padding: 15px;
+    background-color: rgba(26, 11, 46, 1);
+    border: 1px solid rgba(83, 60, 114, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.host-link-circle img {
+    width: 100%;
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -341,6 +407,13 @@ footer {
     .menue,
     .nav-btn {
         display: none;
+    }
+    nav{
+        align-items: center;
+    }
+    .hamburger-menue img{
+        width: 25px;
+        margin-top: 15px;
     }
 
     #banner-section {
@@ -438,6 +511,37 @@ footer {
 
     }
 
+    footer {
+        padding: 40px 0px;
+        width: 100%;
+    }
 
+    .footer-container {
+        gap: 16px;
 
+    }
+
+    .social-links {
+        max-width: 300px;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        column-gap: 10px;
+        font-weight: 200;
+    }
+
+    #footer-logo {
+        font-size: 3.8rem;
+    }
+
+    .host-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .host-heading {
+        font-size: 2.5rem;
+        margin-bottom: 24px;
+    }
 }
